@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 1920px;
+  font-size: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1.8rem 4.2rem;
+  background-color: #16dcf0;
+  border-radius: 5px;
+  font-family: "OpenSans-SemiBold", serif;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 8px 2px #16dcf0;
+}
+
+.btn:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  font-size: 1.75rem;
+}
+
+.wrapper {
+  width: 129rem;
+  margin: 0 auto;
+}
+
+.banner {
+  height: 819px;
+  color: #fff;
+}
+
+.banner::after {
+  content: "";
+  background: #87ceeb url(./../img/main.png) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  width: auto;
+  width: 1920px;
+  height: 819px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.header {
+  padding-top: 3.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 1.8rem;
+  font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
+}
+
+.logo {
+}
+
+.logo__img {
+}
+
+.logo__text {
+  line-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.header-menu {
+  margin-left: 31.9rem;
+  margin-right: 20.4rem;
+}
+
+.header-menu__navbar {
+  display: flex;
+  list-style: none;
+}
+
+.header-menu__navbar-item {
+  margin-right: 10rem;
+}
+
+.header-menu__navbar-item:last-child {
+  margin-right: 0;
+}
+
+.header-menu__navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-menu__navbar-link:hover,
+.header-menu__navbar-link-active {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.header-menu__navbar-link:hover {
+  text-shadow: 0 0 1px #fff;
+}
+
+.search-box {
+  display: flex;
+  align-items: flex-start;
+}
+
+.search-form {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 1rem;
+}
+
+.search-form__input {
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  width: 12rem;
+}
+
+.search-form__button {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1.7rem;
+}
+
+.favorites__button {
+  color: #fff;
+  margin-left: 1.1rem;
+}
+
+.banner-heading {
+  text-align: center;
+  margin-top: 20.4rem;
+}
+
+.banner-heading__text {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.banner-heading__title {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 16.5rem;
+  line-height: 16.5rem;
+}
+
+.banner-heading__button {
+  margin-top: 3.3rem;
+}
+
+.features {
+}
+
+.features__box {
+  margin-top: 25rem;
+  margin-bottom: 15rem;
+}
+
+.features__heading {
+  color: #262626;
+  text-align: center;
+}
+
+.features__heading-title {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 4.8rem;
+  text-transform: uppercase;
+}
+
+.features__heading_text {
+  font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
+  font-size: 1.6rem;
+}
+
+.features__block {
+  color: #fff;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.features__block-item {
+  position: relative;
+  height: 41.7rem;
+  width: 31.2rem;
+}
+
+.features__block-item:nth-child(2) {
+  margin-left: 3.6rem;
+  margin-right: 3.6rem;
+}
+
+.features__block-item_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.features__block-item_box {
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #00c7dc 6.25%, rgba(22, 220, 240, 0.46) 100%);
+  padding: 2rem;
+}
+
+.features__block-item_title {
+  font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
+  font-size: 2.4rem;
+}
+
+.features__block-item_text {
+  font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
+  font-size: 1.6rem;
+}
+
+.read-more-btn {
+  color: #fff;
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
+  font-size: 1.6rem;
+}
+
+.read-more-btn:hover {
+  text-shadow: 0 0 1px #fff;
+}
+
+.features__block-item_fav-btn {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #16dcf0 6.25%, rgba(22, 220, 240, 0.46) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fav-btn {
+  color: #fff;
+}

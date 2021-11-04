@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "OpenSansHebrewCondensed-Bold";
+  src: url("./../fonts/OpenSansHebrewCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansHebrewCondensed-Regular";
+  src: url("./../fonts/OpenSansHebrewCondensed-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSansCondensed-Bold";
+  src: url("./../fonts/OpenSansCondensed-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "OpenSans-SemiBold";
+  src: url("./../fonts/OpenSans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}

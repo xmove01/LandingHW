@@ -1,0 +1,61 @@
+.order {
+  height: 100vh;
+  background: #87ceeb url(./../img/order.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-form {
+  height: 664px;
+  width: 1102px;
+  background-color: #fff;
+  position: relative;
+  //   display: flex;
+}
+
+.order-form__title {
+  color: #262626;
+}
+
+.order-form__field-name {
+  font-family: "OpenSans-Regular";
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+  color: #454545;
+}
+
+.order-from__input-text {
+}
+
+.order-form__selector {
+}
+
+.order-form__selector-option {
+}
+
+.order-form__input-date {
+}
+
+.order-form__guests-selector {
+}
+
+.order-form__input-radio {
+}
+
+.order-form__guest {
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  line-height: 16px;
+  color: #262626;
+}
+
+.order-form__input-checkbox {
+}
+
+.order-form__button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}

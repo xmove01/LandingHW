@@ -1,0 +1,30 @@
+.banner {
+  position: relative;
+  min-height: 100vh;
+  color: #fff;
+  background: #87ceeb url(./../img/main.png) center center no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-heading {
+  text-align: center;
+}
+
+.banner-heading__text {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
+.banner-heading__title {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 16.5rem;
+  line-height: 16.5rem;
+}
+
+.banner-heading__button {
+  margin-top: 3.3rem;
+}

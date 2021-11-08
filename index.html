@@ -10,15 +10,15 @@
     <script src="https://kit.fontawesome.com/c6e08e6674.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <main class="wrapper">
-      <section class="banner">
-        <header class="header">
+    <section class="banner">
+      <header class="header">
+        <div class="wrapper">
           <div class="logo">
             <p class="logo__text"><img src="./img/logo.png" alt="logo" class="logo__img" />&nbspExpedia</p>
           </div>
           <nav class="header-menu">
             <ul class="header-menu__navbar">
-              <li class="header-menu__navbar-item"><a href="#" class="header-menu__navbar-link header-menu__navbar-link-active">News</a></li>
+              <li class="header-menu__navbar-item"><a href="#" class="header-menu__navbar-link">News</a></li>
               <li class="header-menu__navbar-item"><a href="#" class="header-menu__navbar-link">Destinations</a></li>
               <li class="header-menu__navbar-item"><a href="#" class="header-menu__navbar-link">Blog</a></li>
               <li class="header-menu__navbar-item"><a href="#" class="header-menu__navbar-link">Contact</a></li>
@@ -31,65 +31,123 @@
             </form>
             <a href="#" class="favorites__button"><i class="far fa-star"></i></a>
           </div>
-        </header>
-        <div class="banner-heading">
-          <h4 class="banner-heading__text">A Symbol of Freedom</h4>
-          <h1 class="banner-heading__title">Thailand</h1>
-          <div class="banner-heading__button">
-            <a href="#" class="btn">Explore</a>
-          </div>
         </div>
-      </section>
-      <section class="features">
-        <div class="features__box">
-          <article class="features__heading">
-            <h2 class="features__heading-title">A New Sky A New Life</h2>
-            <p class="features__heading_text">Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget.</p>
-            <p class="features__heading_text">Aenean massa cum sociis Theme natoque.</p>
+      </header>
+      <div class="banner-heading">
+        <h4 class="banner-heading__text">A Symbol of Freedom</h4>
+        <h1 class="banner-heading__title">Thailand</h1>
+        <div class="banner-heading__button">
+          <a href="#" class="btn">Explore</a>
+        </div>
+      </div>
+    </section>
+    <section class="features">
+      <div class="wrapper">
+        <article class="features__heading">
+          <h2 class="features__heading-title">A New Sky A New Life</h2>
+          <p class="features__heading_text">Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget.</p>
+          <p class="features__heading_text">Aenean massa cum sociis Theme natoque.</p>
+        </article>
+        <div class="features__block">
+          <article class="features__block-item">
+            <img src="./img/features-pic-1.jpg" alt="feature" class="features__block-item_bg" />
+            <div class="features__block-item_fav-btn">
+              <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
+            </div>
+            <div class="features__block-item_box">
+              <h3 class="features__block-item_title">Ao Nang</h3>
+              <p class="features__block-item_text">
+                Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
+              </p>
+              <a href="#" class="read-more-btn">Read more</a>
+            </div>
           </article>
-          <div class="features__block">
-            <article class="features__block-item">
-              <img src="./img/features-pic-1.jpg" alt="feature" class="features__block-item_bg" />
-              <div class="features__block-item_fav-btn">
-                <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
-              </div>
-              <div class="features__block-item_box">
-                <h3 class="features__block-item_title">Ao Nang</h3>
-                <p class="features__block-item_text">
-                  Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
-                </p>
-                <a href="#" class="read-more-btn">Read more</a>
-              </div>
-            </article>
-            <article class="features__block-item">
-              <img src="./img/features-pic-2.jpg" alt="feature" class="features__block-item_bg" />
-              <div class="features__block-item_fav-btn">
-                <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
-              </div>
-              <div class="features__block-item_box">
-                <h3 class="features__block-item_title">Ao Nang</h3>
-                <p class="features__block-item_text">
-                  Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
-                </p>
-                <a href="#" class="read-more-btn">Read more</a>
-              </div>
-            </article>
-            <article class="features__block-item">
-              <img src="./img/features-pic-3.jpg" alt="feature" class="features__block-item_bg" />
-              <div class="features__block-item_fav-btn">
-                <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
-              </div>
-              <div class="features__block-item_box">
-                <h3 class="features__block-item_title">Ao Nang</h3>
-                <p class="features__block-item_text">
-                  Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
-                </p>
-                <a href="#" class="read-more-btn">Read more</a>
-              </div>
-            </article>
-          </div>
+          <article class="features__block-item">
+            <img src="./img/features-pic-2.jpg" alt="feature" class="features__block-item_bg" />
+            <div class="features__block-item_fav-btn">
+              <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
+            </div>
+            <div class="features__block-item_box">
+              <h3 class="features__block-item_title">Ao Nang</h3>
+              <p class="features__block-item_text">
+                Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
+              </p>
+              <a href="#" class="read-more-btn">Read more</a>
+            </div>
+          </article>
+          <article class="features__block-item">
+            <img src="./img/features-pic-3.jpg" alt="feature" class="features__block-item_bg" />
+            <div class="features__block-item_fav-btn">
+              <a href="#" class="fav-btn"><i class="far fa-star"></i></a>
+            </div>
+            <div class="features__block-item_box">
+              <h3 class="features__block-item_title">Ao Nang</h3>
+              <p class="features__block-item_text">
+                Lorem ipsum dolor sit amet, conseetuer adipiscing elit. Aenan comdo igula eget. Aenean massa cum sociis Theme natoque.
+              </p>
+              <a href="#" class="read-more-btn">Read more</a>
+            </div>
+          </article>
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
+    <section class="discount">
+      <div class="discount__shadow-box">
+        <article class="discount__heading">
+          <h2 class="discount__heading-title">20% OFF</h2>
+          <h3 class="discount__heading-text">The Marina Phuket Hotel</h3>
+          <p class="discount__heading-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum tristique sagittis nisi volutpat. Tortor, sit proin maecenas tortor
+          </p>
+          <div class="discount__heading-button">
+            <a href="#" class="btn">Buy now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section class="slider-airlines">
+      <img src="./img/slider-airlines/delta logo 1.png" alt="" />
+    </section>
+    <section class="order">
+      <form action="#" class="order-form">
+        <h2 class="order-form__title">Book A Ticket And Just Leave</h2>
+        <p class="order-form__field-name">Name</p>
+        <input type="text" name="" id="" class="order-from__input-text" />
+        <p class="order-form__field-name">Surname</p>
+        <input type="text" name="" id="" class="order-from__input-text" />
+        <p class="order-form__field-name">Hotel</p>
+        <select name="" id="" class="order-form__selector">
+          <option value="" class="order-form__selector-option">Test field</option>
+        </select>
+        <p class="order-form__field-name">City</p>
+        <select name="" id="" class="order-form__selector">
+          <option value="" class="order-form__selector-option">Test field</option>
+        </select>
+        <p class="order-form__field-name">Arrival</p>
+        <input type="date" name="" id="" class="order-form__input-date" />
+        <p class="order-form__field-name">Departure</p>
+        <input type="date" name="" id="" class="order-form__input-date" />
+        <p class="order-form__field-name">Guests</p>
+        <span class="order-form__guests-selector">
+          <input type="radio" name="persons" id="" class="order-form__input-radio" />
+          <p class="order-form__guest">1 Person</p>
+        </span>
+        <span class="order-form__guests-selector">
+          <input type="radio" name="persons" id="" class="order-form__input-radio" />
+          <p class="order-form__guest">2 Person</p>
+        </span>
+        <span class="order-form__guests-selector">
+          <input type="radio" name="persons" id="" class="order-form__input-radio" />
+          <p class="order-form__guest">4 Person</p>
+        </span>
+        <span class="order-form__guests-selector">
+          <input type="checkbox" name="transfer" id="" class="order-form__input-checkbox" />
+          <p class="order-form__guest">Transfer</p>
+        </span>
+        <div class="order-form__button">
+          <a href="#" class="btn">Explore</a>
+        </div>
+      </form>
+    </section>
   </body>
 </html>

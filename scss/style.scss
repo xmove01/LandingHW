@@ -1,0 +1,44 @@
+@import "./normalize";
+
+html {
+  font-size: 10px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "OpenSansCondensed-Bold", sans-serif;
+  font-size: 4.8rem;
+}
+
+.btn {
+  padding: 1.8rem 4.2rem;
+  background-color: #16dcf0;
+  border-radius: 5px;
+  font-family: "OpenSans-SemiBold", serif;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 8px 2px #16dcf0;
+}
+
+.btn:active {
+  box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2) inset;
+  font-size: 1.75rem;
+}
+
+.wrapper {
+  max-width: 129rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+@import "./header";
+@import "./banner";
+@import "./features";
+@import "./discount";
+@import "./slider-airlines";
+@import "./order";

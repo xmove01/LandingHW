@@ -1,0 +1,54 @@
+.fter {
+  height: 19rem;
+  width: 100%;
+  font-size: 1.8rem;
+  font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
+  color: #030303;
+  position: relative;
+  ul {
+    list-style: none;
+  }
+  a {
+    color: #030303;
+  }
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 58px;
+  width: 100%;
+  .wrapper {
+  }
+}
+
+.footer-menu {
+  width: 513px;
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer-menu__navbar-item {
+}
+
+.footer-menu__navbar-link {
+  &:hover {
+    border-bottom: 2px solid #030303;
+    padding-bottom: 1rem;
+  }
+}
+
+.socials {
+  width: 8rem;
+  font-size: 24px;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+  }
+  &__link {
+  }
+}

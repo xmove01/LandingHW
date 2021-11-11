@@ -111,43 +111,113 @@
     <section class="order">
       <form action="#" class="order-form">
         <h2 class="order-form__title">Book A Ticket And Just Leave</h2>
-        <p class="order-form__field-name">Name</p>
-        <input type="text" name="" id="" class="order-from__input-text" />
-        <p class="order-form__field-name">Surname</p>
-        <input type="text" name="" id="" class="order-from__input-text" />
-        <p class="order-form__field-name">Hotel</p>
-        <select name="" id="" class="order-form__selector">
-          <option value="" class="order-form__selector-option">Test field</option>
-        </select>
-        <p class="order-form__field-name">City</p>
-        <select name="" id="" class="order-form__selector">
-          <option value="" class="order-form__selector-option">Test field</option>
-        </select>
-        <p class="order-form__field-name">Arrival</p>
-        <input type="date" name="" id="" class="order-form__input-date" />
-        <p class="order-form__field-name">Departure</p>
-        <input type="date" name="" id="" class="order-form__input-date" />
-        <p class="order-form__field-name">Guests</p>
-        <span class="order-form__guests-selector">
-          <input type="radio" name="persons" id="" class="order-form__input-radio" />
-          <p class="order-form__guest">1 Person</p>
-        </span>
-        <span class="order-form__guests-selector">
-          <input type="radio" name="persons" id="" class="order-form__input-radio" />
-          <p class="order-form__guest">2 Person</p>
-        </span>
-        <span class="order-form__guests-selector">
-          <input type="radio" name="persons" id="" class="order-form__input-radio" />
-          <p class="order-form__guest">4 Person</p>
-        </span>
-        <span class="order-form__guests-selector">
-          <input type="checkbox" name="transfer" id="" class="order-form__input-checkbox" />
-          <p class="order-form__guest">Transfer</p>
-        </span>
+        <div class="order-form__input-field">
+          <label class="order-form__field-name">Name</label>
+          <div class="order-form__input-text">
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+        <div class="order-form__input-field">
+          <label class="order-form__field-name">Surname</label>
+          <div class="order-form__input-text">
+            <input type="text" name="" id="" />
+          </div>
+        </div>
+        <div class="order-form__input-field">
+          <label class="order-form__field-name">Hotel</label>
+          <div class="order-form__selector">
+            <select>
+              <option value="1">Test field 1</option>
+              <option value="2">Test field 2</option>
+              <option value="3">Test field 3</option>
+              <option value="4" selected>Test field 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="order-form__input-field">
+          <label class="order-form__field-name">City</label>
+          <div class="order-form__selector">
+            <select>
+              <option value="1">Test field 1</option>
+              <option value="2">Test field 2</option>
+              <option value="3" selected>Test field 3</option>
+              <option value="4">Test field 4</option>
+            </select>
+          </div>
+        </div>
+        <div class="order-form__input-field">
+          <div class="order-form__date-field">
+            <label class="order-form__field-name">Arrival</label>
+            <input type="date" class="order-form__input-date" />
+          </div>
+          <div class="order-form__date-field">
+            <label class="order-form__field-name">Departure</label>
+            <input type="date" class="order-form__input-date" />
+          </div>
+        </div>
+        <div class="order-form__input-field guest-field">
+          <p class="order-form__field-name">Guests</p>
+          <div class="order-form__guests-selector">
+            <div class="order-form__guest">
+              <div class="radio">
+                <input class="radio__input" name="male" type="radio" id="radio_1" />
+                <label class="radio__label" for="radio_1">1 Person</label>
+              </div>
+            </div>
+            <div class="order-form__guest">
+              <div class="radio">
+                <input class="radio__input" name="male" type="radio" id="radio_2" />
+                <label class="radio__label" for="radio_2">2 Person</label>
+              </div>
+            </div>
+            <div class="order-form__guest">
+              <div class="radio">
+                <input class="radio__input" name="male" type="radio" id="radio_3" disabled checked />
+                <label class="radio__label" for="radio_3">4 Person</label>
+              </div>
+            </div>
+            <div class="order-form__guest">
+              <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" id="checkbox_1" />
+                <label class="checkbox__label" for="checkbox_1">Transfer</label>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="order-form__button">
           <a href="#" class="btn">Explore</a>
         </div>
       </form>
+    </section>
+    <section class="fter">
+      <footer class="footer">
+        <div class="wrapper">
+          <div class="logo">
+            <p class="logo__text"><img src="./img/logo.png" alt="logo" class="logo__img" />&nbspExpedia</p>
+          </div>
+          <nav class="footer-menu">
+            <ul class="footer-menu__navbar">
+              <li class="footer-menu__navbar-item"><a href="#" class="footer-menu__navbar-link">News</a></li>
+              <li class="footer-menu__navbar-item"><a href="#" class="footer-menu__navbar-link">Destinations</a></li>
+              <li class="footer-menu__navbar-item"><a href="#" class="footer-menu__navbar-link">Blog</a></li>
+              <li class="footer-menu__navbar-item"><a href="#" class="footer-menu__navbar-link">Contact</a></li>
+            </ul>
+          </nav>
+          <nav class="socials">
+            <ul class="socials__menu">
+              <li class="socials__item">
+                <a href="#" class="socials__link"><i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link"><i class="fab fa-instagram-square"></i></a>
+              </li>
+              <li class="socials__item">
+                <a href="#" class="socials__link"><i class="fab fa-twitter-square"></i></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </footer>
     </section>
   </body>
 </html>

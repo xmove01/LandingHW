@@ -10,7 +10,7 @@
 .order-form {
   padding: 8.5rem 8.9rem;
   height: 664px;
-  width: 1102px;
+  max-width: 1102px;
   background-color: #fff;
   position: relative;
   display: grid;
@@ -29,6 +29,13 @@
     grid-area: title;
     color: #262626;
     text-align: center;
+  }
+  &__field-name {
+    font-family: "OpenSans-Regular";
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    color: #454545;
+    margin-bottom: 9px;
   }
 }
 
@@ -59,14 +66,6 @@
     grid-area: guests;
     display: flex;
   }
-}
-
-.order-form__field-name {
-  font-family: "OpenSans-Regular";
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  color: #454545;
-  margin-bottom: 9px;
 }
 
 /* Input-Text Styles */
@@ -169,21 +168,20 @@
 .order-form__button {
   position: absolute;
   bottom: 105px;
-  right: 134px;
+  right: 8.9rem;
 }
 
 /* Checkbox Styles */
 
 .checkbox {
   position: relative;
-}
-
-.checkbox__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
 }
 
 .checkbox__label {
@@ -260,14 +258,13 @@
 
 .radio {
   position: relative;
-}
-
-.radio__input {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
+  &__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
 }
 
 .radio__label {

@@ -54,6 +54,16 @@ h3 {
   font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
 }
 
+.header__menu {
+  width: 513px;
+}
+
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+
 .logo__text {
   line-height: 2.5rem;
   display: flex;
@@ -61,28 +71,14 @@ h3 {
   align-content: flex-start;
 }
 
-.header-menu {
-  width: 513px;
-}
-
-.header-menu__navbar {
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-.header-menu__navbar-link {
+.header__link {
   text-decoration: none;
   color: #fff;
 }
 
-.header-menu__navbar-link:hover,
-.header-menu__navbar-link-active {
+.header__link:hover {
   border-bottom: 2px solid #fff;
   padding-bottom: 1rem;
-}
-
-.header-menu__navbar-link:hover {
   text-shadow: 0 0 1px #fff;
 }
 
@@ -101,13 +97,22 @@ h3 {
   border: none;
   background: transparent;
   width: 12rem;
+  padding: 0.3rem 0.5rem;
+  font-family: "Roboto-Regular";
+  font-size: 1.6rem;
+  color: #fff;
 }
 
 .search-form__button {
+  cursor: pointer;
   border: none;
   background: transparent;
   color: #fff;
   font-size: 1.7rem;
+}
+
+.search-form input[type="text"]:focus {
+  outline: 0;
 }
 
 .favorites__button {
@@ -126,28 +131,28 @@ h3 {
   justify-content: center;
 }
 
-.banner-heading {
+.banner__heading {
   text-align: center;
 }
 
-.banner-heading__text {
+.banner__text {
   font-family: "OpenSansCondensed-Bold", sans-serif;
   font-size: 2.4rem;
   text-transform: uppercase;
 }
 
-.banner-heading__title {
+.banner__title {
   font-family: "OpenSansCondensed-Bold", sans-serif;
   font-size: 16.5rem;
   line-height: 16.5rem;
 }
 
-.banner-heading__button {
+.banner__button {
   margin-top: 3.3rem;
 }
 
 .features {
-  height: 100vh;
+  height: 976px;
   padding-top: 15rem;
 }
 
@@ -165,38 +170,48 @@ h3 {
   text-align: center;
 }
 
-.features__heading-title {
+.features__title {
   font-family: "OpenSansCondensed-Bold", sans-serif;
   text-transform: uppercase;
 }
 
-.features__heading_text {
+.features__text {
   font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
   font-size: 1.6rem;
 }
 
-.features__block {
+.features__row {
   width: 1008px;
   color: #fff;
   margin-top: 5.2rem;
   display: flex;
+  flex: 1 1 auto;
   justify-content: space-between;
 }
 
-.features__block-item {
-  position: relative;
-  height: 41.7rem;
-  width: 31.2rem;
+@media (max-width: 1024px) {
+  .features__row {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
-.features__block-item_bg {
+.item-features {
+  position: relative;
+  height: 41.7rem;
+  max-width: 31.2rem;
+  flex: 1 1 auto;
+}
+
+.item-features__bg {
   position: absolute;
   top: 0;
   left: 0;
   z-index: -2;
+  height: auto;
 }
 
-.features__block-item_box {
+.item-features__content {
   position: absolute;
   height: 40%;
   width: 100%;
@@ -206,14 +221,27 @@ h3 {
   padding: 2rem;
 }
 
-.features__block-item_title {
+.item-features__title {
   font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
   font-size: 2.4rem;
 }
 
-.features__block-item_text {
+.item-features__text {
   font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
   font-size: 1.6rem;
+}
+
+.item-features__fav-btn {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 1.8rem;
+  background: linear-gradient(90deg, #16dcf0 6.25%, rgba(22, 220, 240, 0.46) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .read-more-btn {
@@ -227,19 +255,6 @@ h3 {
 
 .read-more-btn:hover {
   text-shadow: 0 0 1px #fff;
-}
-
-.features__block-item_fav-btn {
-  width: 5rem;
-  height: 5rem;
-  position: absolute;
-  top: 0;
-  right: 0;
-  font-size: 1.8rem;
-  background: linear-gradient(90deg, #16dcf0 6.25%, rgba(22, 220, 240, 0.46) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .fav-btn {
@@ -265,24 +280,31 @@ h3 {
 }
 
 .discount__heading {
-  width: 476px;
+  max-width: 476px;
 }
 
-.discount__heading-title {
+.discount__title {
   font-size: 10rem;
 }
 
-.discount__heading-text {
-  font-size: 4.8rem;
+.discount__subtitle {
+  line-height: 4.8rem;
 }
 
-.discount__heading-description {
+.discount__text {
   font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
   font-size: 1.6rem;
 }
 
+.discount__button {
+  margin-top: 3.9rem;
+}
+
 .slider-airlines {
-  height: 60vh;
+  height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .order {
@@ -297,7 +319,7 @@ h3 {
 .order-form {
   padding: 8.5rem 8.9rem;
   height: 664px;
-  width: 1102px;
+  max-width: 1102px;
   background-color: #fff;
   position: relative;
   display: grid;
@@ -313,6 +335,14 @@ h3 {
   grid-area: title;
   color: #262626;
   text-align: center;
+}
+
+.order-form__field-name {
+  font-family: "OpenSans-Regular";
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  color: #454545;
+  margin-bottom: 9px;
 }
 
 .order-form__input-field {
@@ -348,14 +378,6 @@ h3 {
 .order-form__input-field:nth-child(7) {
   grid-area: guests;
   display: flex;
-}
-
-.order-form__field-name {
-  font-family: "OpenSans-Regular";
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  color: #454545;
-  margin-bottom: 9px;
 }
 
 /* Input-Text Styles */
@@ -459,7 +481,7 @@ h3 {
 .order-form__button {
   position: absolute;
   bottom: 105px;
-  right: 134px;
+  right: 8.9rem;
 }
 
 /* Checkbox Styles */
@@ -626,16 +648,16 @@ h3 {
   width: 100%;
 }
 
-.footer-menu {
-  width: 513px;
-}
-
-.footer-menu__navbar {
+.footer__navbar {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-menu__navbar-link:hover {
+.footer__menu {
+  width: 513px;
+}
+
+.footer__link:hover {
   border-bottom: 2px solid #030303;
   padding-bottom: 1rem;
 }

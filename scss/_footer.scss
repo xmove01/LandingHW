@@ -20,23 +20,18 @@
   width: 100%;
   .wrapper {
   }
-}
-
-.footer-menu {
-  width: 513px;
   &__navbar {
     display: flex;
     justify-content: space-between;
   }
-}
-
-.footer-menu__navbar-item {
-}
-
-.footer-menu__navbar-link {
-  &:hover {
-    border-bottom: 2px solid #030303;
-    padding-bottom: 1rem;
+  &__menu {
+    width: 513px;
+  }
+  &__link {
+    &:hover {
+      border-bottom: 2px solid #030303;
+      padding-bottom: 1rem;
+    }
   }
 }
 
@@ -46,8 +41,6 @@
   &__menu {
     display: flex;
     justify-content: space-between;
-  }
-  &__item {
   }
   &__link {
   }

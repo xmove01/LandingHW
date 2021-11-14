@@ -37,6 +37,11 @@
     color: #454545;
     margin-bottom: 9px;
   }
+  &__button {
+    position: absolute;
+    bottom: 8.5rem;
+    right: 8.9rem;
+  }
 }
 
 .order-form__input-field {
@@ -163,12 +168,6 @@
   display: flex;
   width: 100%;
   justify-content: space-between;
-}
-
-.order-form__button {
-  position: absolute;
-  bottom: 105px;
-  right: 8.9rem;
 }
 
 /* Checkbox Styles */
@@ -334,6 +333,14 @@
 
 // Устройства Large (настольные компьютеры, менее 1200 пикселей)
 @media (max-width: 1199.98px) {
+  .order-form {
+    height: 60rem;
+    padding: 5.5rem 5.9rem;
+    &__button {
+      bottom: 5.5rem;
+      right: 5.9rem;
+    }
+  }
 }
 
 // Устройства Medium (планшеты, менее 992 пикселей)

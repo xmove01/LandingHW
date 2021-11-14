@@ -11,7 +11,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding-right: 54px;
+    padding: 0 5%;
   }
   &__heading {
     max-width: 476px;
@@ -37,6 +37,11 @@
 
 // Устройства Large (настольные компьютеры, менее 1200 пикселей)
 @media (max-width: 1199.98px) {
+  .discount {
+    &__shadow-box {
+      width: 65%;
+    }
+  }
 }
 
 // Устройства Medium (планшеты, менее 992 пикселей)
@@ -45,7 +50,25 @@
 
 // Устройства Small (телефоны с горизонтальной ориентацией, менее 768 пикселей)
 @media (max-width: 767.98px) {
+  .discount {
+    &__shadow-box {
+      width: 100%;
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: 575.98px) {
+  .discount {
+    height: 80vh;
+    &__shadow-box {
+      text-align: center;
+    }
+    &__title {
+      font-size: 8rem;
+    }
+    &__subtitle {
+      font-size: 3.8rem;
+    }
+  }
 }

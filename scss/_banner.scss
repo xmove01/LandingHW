@@ -42,4 +42,13 @@
 }
 
 @media (max-width: 575.98px) {
+  .banner {
+    &__title {
+      font-size: 27vw;
+      line-height: 27vw;
+    }
+    &__text {
+      font-size: 6vw;
+    }
+  }
 }

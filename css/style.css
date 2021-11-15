@@ -375,6 +375,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
 }
 
 .order-form {
@@ -386,6 +387,7 @@ h3 {
   display: grid;
   grid-column-gap: 3.7rem;
   grid-row-gap: 2.7rem;
+  grid-template-columns: minmax(28rem, 39.9rem) minmax(28rem, 39.9rem);
   grid-template-rows: repeat(4, 68px);
   justify-content: center;
   justify-items: stretch;
@@ -407,6 +409,7 @@ h3 {
 }
 
 .order-form__button {
+  grid-area: button;
   position: absolute;
   bottom: 8.5rem;
   right: 8.9rem;
@@ -416,6 +419,7 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  max-width: 39.9rem;
 }
 
 .order-form__input-field:nth-child(2) {
@@ -436,10 +440,9 @@ h3 {
 
 .order-form__input-field:nth-child(6) {
   grid-area: date;
-  display: flex;
-  flex-direction: row;
-  width: 267px;
-  justify-content: space-between;
+  max-width: 267px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .order-form__input-field:nth-child(7) {
@@ -450,11 +453,12 @@ h3 {
 /* Input-Text Styles */
 .order-form__input-text {
   position: relative;
+  width: 100%;
 }
 
 .order-form__input-text input[type="text"] {
   display: block;
-  width: 39.9rem;
+  width: 100%;
   height: 4.5rem;
   padding: 0 1rem;
   background: none;
@@ -473,6 +477,7 @@ h3 {
 /* Select Styles */
 .order-form__selector {
   position: relative;
+  width: 100%;
 }
 
 .order-form__selector:after {
@@ -492,7 +497,7 @@ h3 {
 
 .order-form__selector select {
   display: block;
-  width: 39.9rem;
+  width: 100%;
   height: 4.5rem;
   padding: 0 1rem;
   background: none;
@@ -693,6 +698,85 @@ h3 {
   .order-form__button {
     bottom: 5.5rem;
     right: 5.9rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .order-form {
+    grid-column-gap: 1.8rem;
+    height: 55rem;
+    padding: 4rem 3rem;
+  }
+  .order-form__button {
+    bottom: 4rem;
+    right: 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .order-form {
+    height: max-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    grid-row-gap: 1.5rem;
+    grid-template-areas: "title" "name " "surname" "hotel" "city" "date" "guests" "button";
+  }
+  .order-form__input-field {
+    max-width: 100%;
+  }
+  .order-form__input-field:nth-child(6) {
+    max-width: 100%;
+  }
+  .order-form__button {
+    position: relative;
+    justify-self: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+  }
+  .order-form__button .btn {
+    width: 100%;
+  }
+  .order-form__date-field {
+    width: 100%;
+  }
+  .order-form__date-field:nth-child(2) {
+    margin-left: 10%;
+  }
+  .order-form__input-date {
+    width: 90%;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .order {
+    height: max-content;
+  }
+  .order-form {
+    padding: 3rem 1.5rem;
+    grid-row-gap: 1rem;
+  }
+  .order-form__date-field {
+    width: 105%;
+  }
+  .order-form__date-field:nth-child(2) {
+    margin-left: 5%;
+  }
+  .order-form__title {
+    font-size: 3.2rem;
+  }
+  .order-form__input-text input[type="text"] {
+    height: 3.5rem;
+  }
+  .order-form__selector select {
+    height: 3.5rem;
+  }
+  .order-form__input-date {
+    height: 3.5rem;
+  }
+  .order-form .btn {
+    padding: 0 4.2rem;
+    height: 5rem;
   }
 }
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -53,6 +54,7 @@ h3 {
   width: 100%;
   font-size: 1.8rem;
   font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
+  z-index: 5;
 }
 
 .header__menu {
@@ -63,6 +65,21 @@ h3 {
   display: flex;
   justify-content: space-between;
   list-style: none;
+}
+
+.header__burger {
+  display: none;
+  position: absolute;
+  left: 0;
+}
+
+.header .wrapper {
+  align-items: flex-start;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
 }
 
 .logo__text {
@@ -121,9 +138,137 @@ h3 {
   margin-left: 1.1rem;
 }
 
+/* скрываем чекбокс */
+#burger__checkbox {
+  opacity: 0;
+}
+
+/* стилизуем кнопку */
+.burger__btn {
+  display: flex;
+  /* используем flex для центрирования содержимого */
+  align-items: center;
+  /* центрируем содержимое кнопки */
+  position: absolute;
+  top: 22%;
+  left: 2rem;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+/* добавляем "гамбургер" */
+.burger__btn > span,
+.burger__btn > span::before,
+.burger__btn > span::after {
+  display: block;
+  position: absolute;
+  top: 46%;
+  width: 13px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.burger__btn > span::before {
+  content: "";
+  top: -8px;
+}
+
+.burger__btn > span::after {
+  content: "";
+  top: 8px;
+}
+
+/* контейнер меню */
+.burger__box {
+  border-top: 2px solid #fff;
+  border-radius: 2px;
+  display: block;
+  position: absolute;
+  visibility: hidden;
+  top: -100vh;
+  width: 100vw;
+  height: max-content;
+  list-style: none;
+  text-align: left;
+  background: linear-gradient(90deg, #16dcf0 6.25%, rgba(22, 220, 240, 0.46) 100%);
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* элементы меню */
+.burger__item {
+  display: block;
+  padding: 12px 4vw 12px 7vw;
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.burger__item:hover {
+  background-color: transparent;
+}
+
+#burger__checkbox:checked ~ .burger__btn > span {
+  transform: rotate(45deg);
+}
+
+#burger__checkbox:checked ~ .burger__btn > span::before {
+  top: 0;
+  transform: rotate(0);
+}
+
+#burger__checkbox:checked ~ .burger__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#burger__checkbox:checked ~ .burger__box {
+  visibility: visible;
+  top: 3.5rem;
+}
+
+.burger__btn > span,
+.burger__btn > span::before,
+.burger__btn > span::after {
+  transition-duration: 0.25s;
+}
+
+.burger__box {
+  transition-duration: 0.45s;
+}
+
+.burger__item {
+  transition-duration: 0.45s;
+}
+
 @media (max-width: 992px) {
   .header__menu {
     width: 45vw;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .header__burger {
+    display: block;
+  }
+  .header__menu {
+    display: none;
+  }
+  .logo__text {
+    margin-left: 9px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header {
+    padding: 2rem 1.5rem 0 1.5em;
+  }
+  .search-form__input {
+    width: 25vw;
+  }
+  .burger__item {
+    padding-left: 13vw;
   }
 }
 
@@ -404,6 +549,12 @@ h3 {
   right: 0;
   background: linear-gradient(270deg, #ffffff 37.31%, rgba(255, 255, 255, 0.17) 90.59%);
   z-index: 3;
+}
+
+@media (max-width: 992px) {
+  .slider-airlines img {
+    height: 150px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -864,7 +1015,7 @@ h3 {
 }
 
 .footer__menu {
-  width: 513px;
+  width: 46vw;
 }
 
 .footer__link:hover {
@@ -880,5 +1031,11 @@ h3 {
 .socials__menu {
   display: flex;
   justify-content: space-between;
+}
+
+@media (max-width: 1199.98px) {
+  .footer__menu {
+    width: 60vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */

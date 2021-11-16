@@ -26,7 +26,7 @@
     margin: 0 5rem;
   }
   &__menu {
-    width: 513px;
+    width: 46vw;
   }
   &__link {
     &:hover {
@@ -53,6 +53,11 @@
 
 // Устройства Large (настольные компьютеры, менее 1200 пикселей)
 @media (max-width: 1199.98px) {
+  .footer {
+    &__menu {
+      width: 60vw;
+    }
+  }
 }
 
 // Устройства Medium (планшеты, менее 992 пикселей)

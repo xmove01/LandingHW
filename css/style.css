@@ -491,7 +491,8 @@ h3 {
 }
 
 .discount__button {
-  margin-top: 3.9rem;
+  margin-top: 2.1rem;
+  display: flex;
 }
 
 @media (max-width: 1199.98px) {
@@ -509,16 +510,20 @@ h3 {
 
 @media (max-width: 575.98px) {
   .discount {
-    height: 80vh;
+    height: max-content;
   }
   .discount__shadow-box {
     text-align: center;
+    padding: 5rem 1rem;
   }
   .discount__title {
     font-size: 8rem;
   }
   .discount__subtitle {
     font-size: 3.8rem;
+  }
+  .discount__button {
+    justify-content: center;
   }
 }
 

@@ -376,7 +376,11 @@ h3 {
 }
 
 .item-features__content {
+  transition-duration: 0.25s;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   height: 40%;
   width: 100%;
   bottom: 0;
@@ -386,16 +390,19 @@ h3 {
 }
 
 .item-features__title {
+  transition-duration: 0.25s;
   font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
   font-size: 2.4rem;
 }
 
 .item-features__text {
+  transition-duration: 0.25s;
   font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
   font-size: 1.6rem;
 }
 
 .item-features__fav-btn {
+  transition-duration: 0.25s;
   width: 5rem;
   height: 5rem;
   position: absolute;
@@ -406,9 +413,11 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 3;
 }
 
 .read-more-btn {
+  transition-duration: 0.25s;
   color: #fff;
   position: absolute;
   bottom: 2rem;
@@ -427,6 +436,34 @@ h3 {
 
 .fav-btn:hover {
   text-shadow: 0 0 1px #fff;
+}
+
+.item-features:hover .item-features__content {
+  transition-duration: 0.25s;
+  justify-content: center;
+  height: 100%;
+}
+
+.item-features:hover .item-features__title {
+  transition-duration: 0.25s;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.item-features:hover .item-features__text {
+  transition-duration: 0.25s;
+  font-size: 2rem;
+}
+
+.item-features:hover .item-features__fav-btn {
+  transition-duration: 0.25s;
+  background: none;
+  font-size: 2.8rem;
+}
+
+.item-features:hover .read-more-btn {
+  transition-duration: 0.25s;
+  font-size: 2.6rem;
 }
 
 @media (max-width: 992px) {
@@ -782,7 +819,7 @@ h3 {
   display: block;
   width: 18px;
   height: 18px;
-  border: 1px solid #255e93;
+  border: 1px solid #9b9b9b;
   background-color: #fff;
   border-radius: 5px;
   position: absolute;
@@ -854,7 +891,7 @@ h3 {
   display: block;
   width: 18px;
   height: 18px;
-  border: 1px solid #255e93;
+  border: 1px solid #9b9b9b;
   background-color: #fff;
   border-radius: 50%;
   position: absolute;

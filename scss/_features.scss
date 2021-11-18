@@ -52,7 +52,11 @@
     }
   }
   &__content {
+    transition-duration: 0.25s;
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     height: 40%;
     width: 100%;
     bottom: 0;
@@ -61,14 +65,17 @@
     padding: 2rem;
   }
   &__title {
+    transition-duration: 0.25s;
     font-family: "OpenSansHebrewCondensed-Bold", sans-serif;
     font-size: 2.4rem;
   }
   &__text {
+    transition-duration: 0.25s;
     font-family: "OpenSansHebrewCondensed-Regular", sans-serif;
     font-size: 1.6rem;
   }
   &__fav-btn {
+    transition-duration: 0.25s;
     width: 5rem;
     height: 5rem;
     position: absolute;
@@ -79,10 +86,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 3;
   }
 }
 
 .read-more-btn {
+  transition-duration: 0.25s;
   color: #fff;
   position: absolute;
   bottom: 2rem;
@@ -97,6 +106,33 @@
   color: #fff;
   &:hover {
     text-shadow: 0 0 1px #fff;
+  }
+}
+
+.item-features:hover {
+  .item-features__content {
+    transition-duration: 0.25s;
+    justify-content: center;
+    height: 100%;
+  }
+  .item-features__title {
+    transition-duration: 0.25s;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .item-features__text {
+    transition-duration: 0.25s;
+    font-size: 2rem;
+  }
+
+  .item-features__fav-btn {
+    transition-duration: 0.25s;
+    background: none;
+    font-size: 2.8rem;
+  }
+  .read-more-btn {
+    transition-duration: 0.25s;
+    font-size: 2.6rem;
   }
 }
 
